@@ -1,0 +1,255 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mykicad
+LIBS:hw-cache
+EELAYER 27 0
+EELAYER END
+$Descr User 5906 4331
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "13 mar 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 8051 U1
+U 1 1 56D02F8B
+P 2750 2050
+F 0 "U1" H 2300 3300 60  0000 C CNN
+F 1 "8051" H 2350 3200 60  0000 C CNN
+F 2 "~" H 5700 1550 60  0000 C CNN
+F 3 "~" H 5700 1550 60  0000 C CNN
+	1    2750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 56D0FD4D
+P 1950 2950
+F 0 "#PWR4" H 1950 2950 30  0001 C CNN
+F 1 "GND" H 1950 2880 30  0001 C CNN
+F 2 "" H 1950 2950 60  0000 C CNN
+F 3 "" H 1950 2950 60  0000 C CNN
+	1    1950 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56D10668
+P 1150 1000
+F 0 "R1" V 1230 1000 40  0000 C CNN
+F 1 "1K" V 1157 1001 40  0000 C CNN
+F 2 "~" V 1080 1000 30  0000 C CNN
+F 3 "~" H 1150 1000 30  0000 C CNN
+	1    1150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 56D10845
+P 1150 2050
+F 0 "#PWR3" H 1150 2050 30  0001 C CNN
+F 1 "GND" H 1150 1980 30  0001 C CNN
+F 2 "" H 1150 2050 60  0000 C CNN
+F 3 "" H 1150 2050 60  0000 C CNN
+	1    1150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 56D10881
+P 1150 750
+F 0 "#PWR2" H 1150 850 30  0001 C CNN
+F 1 "VCC" H 1150 850 30  0000 C CNN
+F 2 "" H 1150 750 60  0000 C CNN
+F 3 "" H 1150 750 60  0000 C CNN
+	1    1150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 56D108A8
+P 950 1700
+F 0 "C1" H 1000 1800 50  0000 L CNN
+F 1 "10uF" H 1000 1600 50  0000 L CNN
+F 2 "~" H 950 1700 60  0000 C CNN
+F 3 "~" H 950 1700 60  0000 C CNN
+	1    950  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56D1098E
+P 1150 2350
+F 0 "C2" H 1150 2450 40  0000 L CNN
+F 1 "104" H 1156 2265 40  0000 L CNN
+F 2 "~" H 1188 2200 30  0000 C CNN
+F 3 "~" H 1150 2350 60  0000 C CNN
+	1    1150 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 56D1099D
+P 1150 2950
+F 0 "C3" H 1150 3050 40  0000 L CNN
+F 1 "104" H 1156 2865 40  0000 L CNN
+F 2 "~" H 1188 2800 30  0000 C CNN
+F 3 "~" H 1150 2950 60  0000 C CNN
+	1    1150 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 56D109AC
+P 1350 2650
+F 0 "X1" H 1350 2800 60  0000 C CNN
+F 1 "12MHZ" H 1350 2500 60  0000 C CNN
+F 2 "~" H 1350 2650 60  0000 C CNN
+F 3 "~" H 1350 2650 60  0000 C CNN
+	1    1350 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  2350 950  2950
+$Comp
+L GND #PWR1
+U 1 1 56D10AB3
+P 900 2650
+F 0 "#PWR1" H 900 2650 30  0001 C CNN
+F 1 "GND" H 900 2580 30  0001 C CNN
+F 2 "" H 900 2650 60  0000 C CNN
+F 3 "" H 900 2650 60  0000 C CNN
+	1    900  2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  2650 950  2650
+Connection ~ 950  2650
+$Comp
+L SW_PUSH SW1
+U 1 1 56D107BF
+P 1350 1700
+F 0 "SW1" H 1500 1810 50  0000 C CNN
+F 1 "SW_PUSH" H 1350 1620 50  0000 C CNN
+F 2 "~" H 1350 1700 60  0000 C CNN
+F 3 "~" H 1350 1700 60  0000 C CNN
+	1    1350 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 2000 950  2000
+Wire Wire Line
+	950  2000 950  1900
+Wire Wire Line
+	1150 2050 1150 2000
+Connection ~ 1150 2000
+Wire Wire Line
+	1350 1400 950  1400
+Wire Wire Line
+	950  1400 950  1500
+Wire Wire Line
+	1150 1250 1150 1400
+Connection ~ 1150 1400
+Text GLabel 1150 1250 2    39   Input ~ 0
+RST
+Text GLabel 1950 1850 0    39   Input ~ 0
+RST
+Text GLabel 1350 2350 2    39   Input ~ 0
+X1
+Text GLabel 1350 2950 2    39   Input ~ 0
+X2
+Text GLabel 1950 2750 0    39   Input ~ 0
+X2
+Text GLabel 1950 2850 0    39   Input ~ 0
+X1
+$Comp
+L 7SEGM S1
+U 1 1 56E4C244
+P 4650 1450
+F 0 "S1" H 4650 2100 60  0000 C CNN
+F 1 "7SEGM" H 4650 800 60  0000 C CNN
+F 2 "~" H 4650 1450 60  0000 C CNN
+F 3 "~" H 4650 1450 60  0000 C CNN
+	1    4650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PACK8 RP1
+U 1 1 56E4DF34
+P 3700 1500
+F 0 "RP1" H 3700 1950 40  0000 C CNN
+F 1 "1K" H 3700 1050 40  0000 C CNN
+F 2 "~" H 3700 1500 60  0000 C CNN
+F 3 "~" H 3700 1500 60  0000 C CNN
+	1    3700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR5
+U 1 1 56E4DF57
+P 3500 1050
+F 0 "#PWR5" H 3500 1150 30  0001 C CNN
+F 1 "VCC" H 3500 1150 30  0000 C CNN
+F 2 "" H 3500 1050 60  0000 C CNN
+F 3 "" H 3500 1050 60  0000 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR6
+U 1 1 56E4DF66
+P 3900 1050
+F 0 "#PWR6" H 3900 1150 30  0001 C CNN
+F 1 "VCC" H 3900 1150 30  0000 C CNN
+F 2 "" H 3900 1050 60  0000 C CNN
+F 3 "" H 3900 1050 60  0000 C CNN
+	1    3900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR7
+U 1 1 56E4DF7C
+P 3900 1950
+F 0 "#PWR7" H 3900 2050 30  0001 C CNN
+F 1 "VCC" H 3900 2050 30  0000 C CNN
+F 2 "" H 3900 1950 60  0000 C CNN
+F 3 "" H 3900 1950 60  0000 C CNN
+	1    3900 1950
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,6 @@
+# MCU 8051 IDE: Virtual HW component configuration file
+# Date: 03/04/2016
+# Project: main
+# Component: LED panel
+
+LedPanel {{4 - 0 - 5 - 1 - 6 - 2 - 7 0 3 -} {4 - 0 - 5 - 1 - 6 - 2 - 7 7 3 -} {} {} red}
